@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #ebf5fb;
+            padding: 25px;
+        }
+        .container {
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #aaa;
+        }
+        h2 {
+            text-align: center;
+            color: #21618c;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 9px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #2874a6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #154360;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Event Registration</h2>
+
+    <form>
+        <label>Student Name:</label>
+        <input type="text" name="name" required>
+
+        <label>College Name:</label>
+        <input type="text" name="college" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number:</label>
+        <input type="text" name="phone"
+               pattern="[0-9]{10}" required>
+
+        <label>Select Event:</label>
+        <select name="event" required>
+            <option value="">Select Event</option>
+            <option>Web Design</option>
+            <option>Quiz Competition</option>
+            <option>Paper Presentation</option>
+            <option>Debugging</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>
